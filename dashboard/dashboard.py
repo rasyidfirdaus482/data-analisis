@@ -276,3 +276,5 @@ plt.xlabel('Weather Condition', fontsize=12)
 plt.ylabel('Total Usage', fontsize=12)
 plt.xticks(rotation=15)
 st.pyplot(plt)
+
+st.caption("Copyright "+ str(datetime.date.today().year) + " " + "[Rasyid Firdaus Harmaini](https://www.linkedin.com/in/rasyid-firdaus-288533206/ 'Rasyid Firdaus Harmaini | LinkedIn')")
