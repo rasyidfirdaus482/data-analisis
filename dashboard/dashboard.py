@@ -92,8 +92,8 @@ def summarize_weather_usage(data):
     return weather_usage
 
 
-day_df = pd.read_csv("main_day_df_data.csv")
-hour_df = pd.read_csv("main_hour_df_data.csv")
+day_df = pd.read_csv("dashboard/main_day_df_data.csv")
+hour_df = pd.read_csv("dashboard/main_hour_df_data.csv")
 
 # Mengonversi kolom tanggal menjadi tipe datetime
 day_df["date"] = pd.to_datetime(day_df["dteday"])
@@ -106,7 +106,7 @@ latest_date = day_df["date"].max()
 # Sidebar untuk filter
 with st.sidebar:
     # Menampilkan logo aplikasi di sidebar
-    st.image("logo.png")
+    st.image("dashboard/logo.png")
     
     # Input tanggal untuk filter
     start_date, end_date = st.date_input(
